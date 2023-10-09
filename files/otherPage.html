@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Basic CSS for the horizontal navbar */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url("../images/back.gif");
+            
+            
+        }
+        
+        .navbar {
+            background-color: peru;
+            display: flex;
+            border: 2px solid black;
+            /* padding: 1rem; */
+            /* background-color: darkgoldenrod; */
+            position: fixed;
+            font-size: 20px;
+            width: 100%;
+            height: 60px;
+        }
+
+        .navbar a {
+            color: white;
+            justify-content: space-between;
+            text-align: center;
+            padding: 15px 12px;
+            margin: 0;
+            text-decoration: none;
+            width: 100%;
+            border: 2px solid black;
+            border-radius: 10px;
+            transition: 0.5s;
+        }
+
+        .navbar a:hover {
+            background-color: black;
+            color: wheat;
+            font-size: x-large;
+        }
+
+        #currentPage{
+            background-color: brown;
+            color: wheat;
+        }
+
+        .container {
+            margin-top: 6%;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            align-items:normal;
+            justify-content: space-around;
+            margin-top: 0%;
+
+        }
+
+        .squareBox {
+            border: black 3px solid;
+            border-radius: 20px;
+            width: 31%;
+            height: 250px;
+            background-color:whitesmoke;
+            content: '';
+            text-align: center;
+            /* padding-top: 7%; */
+            background-color:indianred;
+            margin-bottom: 1%;
+            
+        }
+
+        h1{
+            text-align: center;
+            font-family: cursive;
+        }
+
+        .photo{
+            transition: 2s;
+        }
+
+        .photo:hover{
+            transform: rotate(360deg);
+        }
+
+        .photo1{
+            background-image: url("../images/image1.png");
+            background-size: cover; 
+            background-repeat: no-repeat; 
+        }
+
+        .photo2{
+            background-image: url("../images/image2.png");
+            background-size: cover; 
+            background-repeat: no-repeat;
+        }
+
+        .photo3{
+            background-image: url("../images/image3.png");
+            background-size: cover; 
+            background-repeat: no-repeat; 
+        }
+
+        .hobby1{
+            background-image: url("../images/cricket.jpeg");
+            background-size: cover; 
+            background-repeat: no-repeat; 
+        }
+
+        .hobby2{
+            background-image: url("../images/swimming.avif");
+            background-size: cover;
+            background-repeat: no-repeat; 
+        }
+
+        .hobby3{
+            background-image: url("../images/hiking.jpeg");
+            background-size: cover;
+            background-repeat: no-repeat; 
+        }
+
+        @media (min-width: 700px) and (min-height: 800px) {
+            .container{
+                flex-direction: column;
+                justify-content: space-around;
+            }
+            .squareBox {
+                margin-bottom: 2%;
+                width: 96%;
+                padding-top:5%;
+                margin-left: 2%;
+                height: 250px;
+
+           
+            }
+        }
+
+        @media (max-width: 500px) and (min-height: 500px) {
+            .container{
+                flex-direction: column;
+                justify-content: space-around;
+            }
+            .squareBox {
+                margin-bottom: 2%;
+                width: 96%;
+                padding-top:10%;
+                margin-left: 2%;
+                height: 200px;
+           
+            }
+            
+
+
+        }
+    </style>
+</head>
+<body>
+
+<div class="navbar">
+    <a href="./index.html" >About</a>
+    <a href="../files/projectPage.html">Projects</a>
+    <a href="../files/contactPage.html">Contact</a>
+    <a href="../files/otherPage.html" id="currentPage">Others</a>
+</div><br><br><br>
+<h1>Hobbies</h1>
+<div class = "container">
+    <div class = "squareBox hobby1"></div>
+    <div class = "squareBox hobby2"></div>
+    <div class = "squareBox hobby3"></div>
+
+</div><br>
+<h1>Photos</h1>
+<div class = "container">
+    <div class = "squareBox photo photo1"></div>
+    <div class = "squareBox photo photo2"></div>
+    <div class = "squareBox photo photo3"></div>
+
+</div>
+
+</body>
+</html>

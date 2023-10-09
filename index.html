@@ -1,1 +1,183 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <style>
+        
+        /* Basic CSS for the horizontal navbar */
+        body {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            /* background-color:antiquewhite; */
+            background-image: url("./images/back.gif");
+            
+        }
+
+        
+        .navbar {
+            background-color: peru;
+            display: flex;
+            border: 2px solid black;
+            /* padding: 1rem; */
+            /* background-color: darkgoldenrod; */
+            position: fixed;
+            font-size: larger;
+            width: 100%;
+            height: 60px;
+        }
+
+        .navbar a {
+            color: white;
+            justify-content: space-between;
+            text-align: center;
+            padding: 15px 12px;
+            margin: 0;
+            text-decoration: none;
+            width: 100%;
+            border: 2px solid black;
+            border-radius: 10px;
+            transition: 0.5s;
+        }
+
+        .navbar a:hover {
+            background-color: black;
+            color: wheat;
+            font-size: x-large;
+        }
+
+        /* .navbar a:active {
+            background-color: brown;
+            color: wheat;
+        } */
+        #currentPage{
+            background-color: brown;
+            color: wheat;
+        }
+        
+        .profile{
+            width: 25%;
+            border-radius: 1px;
+            margin-top: 1%;
+            border: 1px solid brown;
+            border-radius: 2%;
+            flex: 0, 0, auto; 
+            margin-right: 20px; 
+        }
+
+        .container{
+            display: flex;
+            align-items:normal;
+        }
+
+        .text-div{
+            flex: 1;
+            margin-top: 1%;;
+        }
+
+        ul{
+            margin-top: 0%;
+        }
+
+        .educationIcon{
+            width:2%;
+            height: 22px;
+        }
+
+    
+
+        @media (min-width: 700px) and (min-height: 800px) {
+            .profile{
+                width: 100%;
+                height: 500px;
+            }
+
+            .container {
+                flex-direction: column; 
+                align-items: flex-start; 
+            }
+
+            .text-div{
+                padding-left: 1%;
+            }
+
+
+            
+
+        }
+        @media (max-width: 500px) and (min-height: 500px) {
+            .profile{
+                width: 100%;
+                height: 250px;
+            }
+
+            .container {
+                flex-direction: column; /* Stack items vertically */
+                align-items: flex-start; /* Align items to the left */
+            }
+
+            .text-div{
+                padding-left: 1%;
+            }
+
+            .description{
+                font-size: x-small;
+
+            }
+            h1 {
+                font-size: larger;
+
+            }
+
+            h3{
+                font-size: small;
+            }
+
+            .education{
+                font-size: smaller;
+            }
+
+            
+
+        }
+
+        
+    </style>
+</head>
+<body>
+
+<div class="navbar">
+    <a href="index.html" id="currentPage">About</a>
+    <a href="./files/projectPage.html">Projects</a>
+    <a href="./files/contactPage.html">Contact</a>
+    <a href="./files/otherPage.html">Others</a>
+
+</div>
+<br><br><br>
+<div class = "container">
+    <img src="./images/profile.jpg" alt="Image Description" class="profile">
+    <div class = "text-div">
+        <h1>SAMEER DAWANI</h1>
+        <p class="description">An aspiring Software Engineer currently pursuing Masters in Computer Science at Northeastern University, enthusiastic about solving business problems and learning new technologies. I have 15 months of work experience as a Software Developer at fintech company, where I have worked as a full stack developer in developing web based applications using C#, .NET, AJAX along with Java script as front end. I pursued Masters degree in order to design more scalable and efficient products. I am passionate about designing and developing available, high quality, distributed web systems.</p>
+        
+        <h3><u>EDUCATION</u>&nbsp;&nbsp;<img src="./images/education.png" alt="education icon" class="educationIcon"></h3>
+        <span class="education"><strong>Northeastern University</strong>, Seattle, WA<br>Masters of Science in Computer Science<br>Related Courses: Algorithms, Web developement, Distributed Scalable Systems, etc.</span><br><br>
+        <span class="education"><strong>NED University</strong>, Karachi, Pakistan<br>Bachelor of Engineering in Computer Systems<br>Related Courses: Software Engineering, Object-Oriented Design, Computer Programming, etc</span><br><br>
+        <h3><u>EXPERIENCE</u>&nbsp;&nbsp;<img src="./images/experience.png" alt="experience icon" class="educationIcon"></h3>
+        <span class="education"><strong>Northeastern University</strong>, Seattle, WA<br>Graduate Teaching Assistant (Object Oriented Programming)<br><ul><li>Demonstrated exceptional mentoring skills by providing guidance to over 50 students regarding Labs & assignments and also created solution codes for peer Teaching Assistants (TAs) to facilitate grading</li></ul></span><br>
+        <span class="education"><strong>BenchMatrix Pvt Ltd</strong>, Seattle, WA<br>Software Developer<br>
+            <ul>
+                <li>Developed a comprehensive website and internal workflow portal for a banking complaint organization organization using C#, ASP.NET, JavaScript, AJAX, REST API and SQL Server.</li>
+                <li>Designed Relational database that handles almost 500 real-time requests per day, ensuring smooth data manipulation.</li>
+                <li>Improved performance and readability of existing deployed products by refactoring 20% of codebase in Java and C#.</li>
+                <li>Resolved software issues which encountered during deployment, using version control and showcasing problem-solving skills.</li>
+            </ul></span>
+    </div>
+    
+</div>
+
+
+</body>
+</html>

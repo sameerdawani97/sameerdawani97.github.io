@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Basic CSS for the horizontal navbar */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url("../images/back.gif");
+        }
+
+        .navbar {
+            background-color: peru;
+            display: flex;
+            border: 2px solid black;
+            /* padding: 1rem; */
+            /* background-color: darkgoldenrod; */
+            position: fixed;
+            font-size: 20px;
+            width: 100%;
+            height: 60px;
+        }
+
+        .navbar a {
+            color: white;
+            justify-content: space-between;
+            text-align: center;
+            padding: 14px 12px;
+            margin: 0;
+            text-decoration: none;
+            width: 100%;
+            border: 2px solid black;
+            border-radius: 10px;
+            transition: 0.5s;
+        }
+
+        .navbar a:hover {
+            background-color: black;
+            color: wheat;
+            font-size: x-large;
+        }
+
+        /* .navbar a:active {
+            background-color: brown;
+            color: wheat;
+        } */
+        #currentPage{
+            background-color: brown;
+            color: wheat;
+        }
+
+        .container {
+            margin-top: 6%;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            align-items:center;
+            justify-content: space-around;
+
+        }
+
+        .squareBox {
+            border: black 3px solid;
+            border-radius: 20px;
+            width: 31%;
+            height: 250px;
+            background-color:whitesmoke;
+            content: '';
+            text-align: center;
+            padding-top: 7%;
+            background-color:indianred;
+            
+        }
+        
+        h1{
+            text-align: center;
+            font-family: cursive;
+        }
+
+        .LinkedIn{
+            border-radius: 20%;
+        }
+
+        .gmail{
+            border-radius: 15%;
+
+        }
+        .phone{
+            border-radius: 50%;
+
+        }
+
+        .image{
+            width: 25%;
+            transition: 0.5s;
+        }
+
+        .image:hover{
+            width:40%
+        }
+
+        a{
+            text-decoration: none;
+        }
+
+        @media (min-width: 700px) and (min-height: 800px) {
+            .container{
+                flex-direction: column;
+                justify-content: space-around;
+            }
+            .squareBox {
+                margin-bottom: 2%;
+                width: 94%;
+                padding-top:5%;
+                height: 350px;
+
+           
+            }
+        }
+
+        @media (max-width: 500px) and (min-height: 500px) {
+            .container{
+                flex-direction: column;
+                justify-content: space-around;
+            }
+            .squareBox {
+                margin-bottom: 2%;
+                width: 94%;
+                padding-top:10%;
+                height: 200px;
+           
+            }
+            
+
+
+        }
+    </style>
+</head>
+<body>
+
+<div class="navbar">
+    <a href="../index.html" >About</a>
+    <a href="../files/projectPage.html">Projects</a>
+    <a href="../files/contactPage.html" id="currentPage">Contact</a>
+    <a href="../files/otherPage.html">Others</a>
+</div><br><br><br>
+<h1>Contact Information</h1>
+<div class = "container">
+    <div class = "squareBox"><img class = "LinkedIn image" src = "../images/linkedIn.png" alt="LinkedIn logo"><br><br><a href = "https://www.linkedin.com/in/sameer-dawani/">https://www.linkedin.com/in/sameer-dawani/</a></div>
+    <div class = "squareBox"><img class = "gmail image" src = "../images/gmail.webp" alt="Gmail logo"><br><br><a href = "#">sameerdawani97@gmail.com</a></div>
+    <div class = "squareBox"><img class = "phone image" src = "../images/phone.png" alt="Phone logo"><br><br><a href="#">+1 (425) 534-3970</a></div>
+
+</div>
+
+</body>
+</html>

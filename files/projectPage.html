@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Basic CSS for the horizontal navbar */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            /* background-color:darkkhaki; */
+            background-image: url("../images/back.gif");
+        }
+
+        .navbar {
+            background-color: peru;
+            display: flex;
+            border: 2px solid black;
+            /* padding: 1rem; */
+            /* background-color: darkgoldenrod; */
+            position: fixed;
+            font-size: 20px;
+            width: 100%;
+            height: 60px;
+        }
+
+        .navbar a {
+            color: white;
+            justify-content: space-between;
+            text-align: center;
+            padding: 14px 12px;
+            margin: 0;
+            text-decoration: none;
+            width: 100%;
+            border: 2px solid black;
+            border-radius: 10px;
+            transition: 0.5s;
+        }
+
+        .navbar a:hover {
+            background-color: black;
+            color: wheat;
+            font-size: x-large;
+        }
+
+        #currentPage{
+            background-color: brown;
+            color: wheat;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: auto auto;
+            background-color:brown;
+            padding: 10px;
+        
+        }
+        
+        .grid-item {
+            background-color:bisque;
+            border: 1px solid rgba(0, 0, 0, 0.8);
+            padding: 40px;
+            font-size: 20px;
+            text-align: center;
+            
+        }
+
+        .chatroom{
+            background-image: url('../images/chatroom.webp'); /* Specify the path to your image */
+            background-size: cover; /* Adjust the image size to cover the entire div */
+            background-repeat: no-repeat;
+            font-family:cursive;
+            color: black;
+        }
+        
+        .prediction{
+            background-image: url('../images/prediction.jpeg'); 
+            background-size: cover; 
+            background-repeat: no-repeat;
+            font-family:cursive;
+
+        }
+
+        .outcomeBased{
+            background-image: url('../images/obe.jpeg'); 
+            background-size: cover; 
+            background-repeat: no-repeat;
+            font-family:cursive;
+        }
+
+        .clientLoad{
+            background-image: url('../images/loadtest.png'); 
+            background-size: cover; 
+            background-repeat: no-repeat;
+            font-family:cursive;
+        }
+
+        a{
+            text-decoration: none;
+        }
+
+        h1{
+            text-align: center;
+            font-family: cursive;
+        }
+
+        h2{
+            font-family:cursive;
+            margin-left: 1%;
+        }
+
+        .projects-div{
+            font-family:cursive;
+            font-size: 20px;
+            margin-left: 1%;
+            width: 90%
+        }
+
+        ul{
+            margin-top: 0%;
+        }
+
+        .projects
+        {
+            font-size: larger;
+        }
+
+        @media (min-width: 700px) and (min-height: 800px) {
+           
+        }
+
+        @media (max-width: 500px) and (min-height: 500px) {
+            
+
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="navbar">
+    <a href="../index.html" >About</a>
+    <a href="../files/projectPage.html" id="currentPage">Projects</a>
+    <a href="../files/contactPage.html">Contact</a>
+    <a href="../files/otherPage.html">Others</a>
+</div>
+<br><br><br>
+<h1>PROJECTS</h1>
+<div class="grid-container">
+    <div class="grid-item chatroom"><a href="#Chatroom" ><strong>Chatroom Project</strong><br>(Click me)</a></div>
+    <div class="grid-item prediction"><a href="#prediction" ><strong>Sports Car Price Prediction</strong><br>(Click me)</a></div>
+    <div class="grid-item outcomeBased"><a href="#outcomebased" ><strong>Outcome Based Education</strong><br>(Click me)</a></div>  
+    <div class="grid-item clientLoad"><a href="#clientload" ><strong>Multiple Concurrent Request by client</strong><br>(Click me)</a></div>
+  
+  </div><br>
+  <h2><u>ACADEMIC PROJECTS</u></h2>
+  <div class = "projects-div">
+  <span class = "projects" id = "Chatroom"><strong>1) Chatroom Project</strong></span>
+  <ul>
+    <li><b>Developed a Java-based application leveraging Object Oriented Design, socket programming and concurrency using threads and enabling efficient handling of multiple client connections.</b></li>
+    <li><b>Executed 3 Scikit-learn machine learning models to train dataset, predicted prices and compared accuracy.</b></li>
+  </ul>
+  <br>
+  <span class = "projects" id = "prediction"><strong>2) Sports Car Price Prediction Project</strong></span>
+  <ul>
+    <li><b>Cleaned data by removing unrelated and duplicated values using open source libraries; Visualized data through plots.</b></li>
+    <li><b>Implemented messaging modules, including broadcast messaging, direct messaging, and client chat screen, providing users with interactive communication by applying best practices and principles to ensure a scalable application.</b></li>
+  </ul>
+  <br>
+  <span class = "projects" id = "outcomebased"><strong>3) Outcome Based Education System</strong></span>
+  <ul>
+    <li><b>Devised learning management application using PHP, Javascript and MySql; Deployed live in NED university and Expected December 2024 GPA: 4.00
+         Developed auto generated email functionality on each test result and grades calculation functionality.</b></li>
+    <li><b>Created quiz evaluation rubric and students progress report functionality and also conducted research on relevant technologies and methodologies, incorporating latest industry trends and findings into project implementation.</b></li>
+  </ul>
+  <br>
+  <span class = "projects" id = "clientload"><strong>4) Multiple Concurrent Request by Client</strong></span>
+  <ul>
+    <li><b>Devised learning management application using PHP, Javascript and MySql; Deployed live in NED university and Expected December 2024 GPA: 4.00
+         Developed auto generated email functionality on each test result and grades calculation functionality.</b></li>
+    <li><b>Created quiz evaluation rubric and students progress report functionality and also conducted research on relevant technologies and methodologies, incorporating latest industry trends and findings into project implementation.</b></li>
+  </ul>
+
+  </div>
+
+</body>
+</html>
